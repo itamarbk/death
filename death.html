@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Is death near?</title>
+        <script>
+         function calc()
+         {
+            var form=document.forms["death"];
+            var fname=form["fname"].value;
+            var lname=form["lname"].value;
+            var age=form["age"].value;
+            var sex=form["sex"].value;
+            var lifeex=form["lifeex"].value;
+            if(sex=="yes")
+                alert("you dirty dog");
+            else
+                alert(fname+" "+lname+" has "+(lifeex-age)+" years to live");
+         }
+        </script>
+    </head>
+    <body>
+        <form id="death">
+            First name: 
+            <input type="text" name="fname"><br>
+            Last name: 
+            <input type="text" name="lname"><br>
+            Age:
+            <input type="number" name="age"><br>
+            Sex: <br>
+            <input type="radio" name="sex" value="male" > Male<br>
+            <input type="radio" name="sex" value="female"> Female<br>
+            <input type="radio" name="sex" value="yes">Yes<br>
+            Life expactancy in your country: 
+            <input type="number" name="lifeex"><br>
+            <input type="submit" value="How much longer do I have??" onclick="calc();">
+        </form>
+    </body>
+</html>
+
+
